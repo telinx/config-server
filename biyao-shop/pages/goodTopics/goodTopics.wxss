@@ -1,0 +1,49 @@
+page {
+  height: 100%;
+}
+
+.container {
+  background: #f2f2f2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.selectedSpecial {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.selectedSpecial .specialImg {
+  width: 100%;
+}
+
+.selectedSpecial .specialImg image {
+  width: 100%;
+}
+
+.selectedSpecial .special {
+  width: 100%;
+  padding: 018rpx 15rpx 18rpx 15rpx;
+}
+
+.selectedSpecial .special .specialName {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 29rpx;
+}
+
+.selectedSpecial .special .specialPrice {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+  color: #1892d2;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 29rpx;
+}

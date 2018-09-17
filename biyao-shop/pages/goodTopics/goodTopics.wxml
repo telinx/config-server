@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="selectedSpecial">
+    <view class='specialImg'>
+      <image src='https://bfs.biyao.com/group1/M00/56/3C/rBACYVuSYD2AVW1YAAD6chgrytk763.jpg' mode='widthFix'></image>
+    </view>
+    <view class="special">
+      <text class='specialName'>减龄双肩包</text> 
+      <text class='specialPrice'>￥89元起</text>
+    </view>
+  </view>
+  
+  <view class="selectedSpecial">
+    <view class='specialImg'>
+      <image src='https://bfs.biyao.com/group1/M00/53/E7/rBACVFuPtgqAE5ImAAEe-M9ZSEE446.jpg' mode='widthFix'></image>
+    </view>
+    <view class="special">
+      <text class='specialName'>减龄双肩包</text> 
+      <text class='specialPrice'>￥89元起</text>
+    </view>
+  </view>
+
+  <view class="selectedSpecial">
+    <view class='specialImg'>
+      <image src='https://bfs.biyao.com/group1/M00/54/40/rBACW1uJNImAPAPUAAEBqWgpysA174.jpg' mode='widthFix'></image>
+    </view>
+    <view class="special">
+      <text class='specialName'>减龄双肩包</text> 
+      <text class='specialPrice'>￥89元起</text>
+    </view>
+  </view>
+
+  <view class="selectedSpecial">
+    <view class='specialImg'>
+      <image src='https://bfs.biyao.com/group1/M00/4E/55/rBACW1t2mkWAQHCpAAEAc-pTrrk255.jpg' mode='widthFix'></image>
+    </view>
+    <view class="special">
+      <text class='specialName'>减龄双肩包</text> 
+      <text class='specialPrice'>￥89元起</text>
+    </view>
+  </view>
+</view>

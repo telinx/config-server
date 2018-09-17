@@ -1,0 +1,15 @@
+
+{
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#683999",
+  "onReachBottomDistance": 10,
+  "usingComponents": {
+    "slideTab": "../../components/navigator/index",
+    "swiperImg": "../../components/swiper_img/index",
+    "loadmore": "../../components/loadmore/index"
+  },
+  "navigationBarTitleText": "爱度美购物",
+  "windows": {
+    "enablePullDownRefresh": false
+  }
+}

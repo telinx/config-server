@@ -1,0 +1,376 @@
+<view class="container">
+  <view class="search">
+    <navigator url="/pages/search/search" class="input">
+      <image class="icon"></image>
+      <text class="txt">请输入要搜索的商品</text>
+    </navigator>
+  </view>
+  <view class="type-container">
+    <scroll-view class="type-navbar" scroll-x="true">
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 0 ? 'type-item-on' : ''}}" id="0" bindtap="tabClick"> 推荐 </view>
+      </view>
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 1 ? 'type-item-on' : ''}}" id="1" bindtap="tabClick"> 咖啡 </view>
+      </view>
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 2 ? 'type-item-on' : ''}}" id="2" bindtap="tabClick"> 饮食 </view>
+      </view>
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 3 ? 'type-item-on' : ''}}" id="3" bindtap="tabClick"> 男装 </view>
+      </view>
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 4 ? 'type-item-on' : ''}}" id="4" bindtap="tabClick"> 女装 </view>
+      </view>
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 5 ? 'type-item-on' : ''}}" id="5" bindtap="tabClick"> 眼镜 </view>
+      </view>
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 6 ? 'type-item-on' : ''}}" id="6" bindtap="tabClick"> 内衣配饰 </view>
+      </view>
+      <view class="type-box">
+        <view class="type-navbar-item {{activeCategoryId == 7 ? 'type-item-on' : ''}}" id="7" bindtap="tabClick"> 母婴 </view>
+      </view>
+    </scroll-view>
+
+    <view class="extendCate" animation="{{animation}}"  bindtap='extendCate'>
+      <image src='/static/images/arrow-down.png'></image>
+    </view>
+    <view class="allCate" animation="{{animationCate}}">
+      <view class="title">全部频道</view>
+      <view class="items">
+        <view class="item" bindtap=''><text class='active'>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+        <view class="item" bindtap=''><text>推荐</text></view>
+      </view> 
+    </view>
+  </view>
+
+  <swiperImg sHeight="260rpx" imgList="{{banners}}" url="picUrl"></swiperImg>
+
+  <view class='recommend'>
+    <view class='promise'>
+      <view class='promiseItem'><image src='/static/images/gou.png'></image>优质制造商直供</view>
+      <view class='promiseItem'><image src='/static/images/gou.png'></image>七天无忧退货</view>
+      <view class='promiseItem'><image src='/static/images/gou.png'></image>全平台商品包邮</view>
+    </view>
+
+    <view class="mainCate">
+      <view class='item'>
+        <view>
+          <image src='/static/images/muyin.png'></image>
+        </view>
+        <view class="txt">爱母婴有</view>
+      </view>
+      <view class='item'>
+        <view>
+          <image src='/static/images/nvzhuang.png'></image>
+        </view>
+        <view class="txt">丽质女神</view>
+      </view>
+      <view class='item'>
+        <view>
+          <image src='/static/images/huazhuang.png'></image>
+        </view>
+        <view class="txt">颜值正义</view>
+      </view>
+      <view class='item'>
+        <view>
+          <image src='/static/images/cup.png'></image>
+        </view>
+        <view class="txt">玉质居家</view>
+      </view>
+      <view class='item'>
+        <view>
+          <image src='/static/images/baojian.png'></image>
+        </view>
+        <view class="txt">健神康体</view>
+      </view>
+    </view>
+    <view class="divide"></view>
+    <view class="rank">
+      <view class="newGoods">
+        <view class="timeTitle">每天10点 准时上新</view>
+        <view class="newGoodsName">好漂亮的裙子</view>
+        <view class="newGoodsImg">
+          <image src='https://bfs.biyao.com/group1/M00/34/3B/rBACW1rNYHqAVX2AAACKRncEUSI137.jpg' ></image>
+          <image src='https://bfs.biyao.com/group1/M00/37/06/rBACYVrpk-CAJ31bAAB36fi7V1A379.jpg' ></image>
+        </view>
+      </view>
+      <view class="sellAndSearch">
+          <view class="item">
+            <view class="rankTitle">热搜·榜</view>
+            <view class="rankDesc">精致好货 一触到达</view>
+            <view class="rankImg">
+              <image src='https://bfs.biyao.com/group1/M00/54/03/rBACVFuQi-uAIaq9AAA3InGZJ3Y112.jpg'></image>
+            </view>
+          </view>
+          <view class="item">
+            <view class="rankTitle">热销·榜</view>
+            <view class="rankDesc">大家认可的好货</view>
+            <view class="rankImg">
+              <image src='https://bfs.biyao.com/group1/M00/23/7E/rBACYVoXbheAdWzaAACdRNKvXW0647.jpg' ></image>
+            </view>
+          </view>
+        </view>
+      
+    </view>
+
+    <!-- 专题 -->
+    <view class="divide"></view>
+    <view class="selectedSpecial">
+      <view class="title">精选·集萃 <image src='/static/images/arrow.png'class="arrow"></image></view>
+      <view class='specialImg'>
+        <image src='https://bfs.biyao.com/group1/M00/56/3C/rBACYVuSYD2AVW1YAAD6chgrytk763.jpg' mode='widthFix'></image>
+      </view>
+      <view class="special">
+        <text class='specialName'>减龄双肩包</text> 
+        <text class='specialPrice'>￥89元起</text>
+      </view>
+    </view>
+
+    <!-- 爱母婴有 -->
+    <view class="divide"></view>
+    <view class="mainTopic">
+      <view class='title'>
+        <text>颜值秀丽</text>
+      </view>
+      <view class="big">
+        <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/02/01/rBACYVkT4c-ATKM2AAEIk2nTkeg265.jpg'></image>
+          </view>
+        </view>
+       <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/00/4A/rBACVFkT4d2AVkAQAAJDhl6p_U8737.jpg'></image>
+          </view>
+        </view>
+      </view>
+
+      <view class="small">
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/32/51/rBACVFrLNDeAZK8LAACeCjabHko161.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/2F/FF/rBACW1ql8JyAGx4fAABnTOIl03Y411.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/01/F4/rBACYVkT4XCAC-KWAACBYCT3OKo039.jpg'></image>
+          </view>
+        </view>
+      </view> 
+    </view>
+
+    <!-- 爱母婴有 -->
+    <view class="divide"></view>
+    <view class="mainTopic">
+      <view class='title'>
+        <text>花漾女神</text>
+      </view>
+      <view class="big">
+        <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/02/01/rBACYVkT4c-ATKM2AAEIk2nTkeg265.jpg'></image>
+          </view>
+        </view>
+       <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/00/4A/rBACVFkT4d2AVkAQAAJDhl6p_U8737.jpg'></image>
+          </view>
+        </view>
+      </view>
+
+      <view class="small">
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/32/51/rBACVFrLNDeAZK8LAACeCjabHko161.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/2F/FF/rBACW1ql8JyAGx4fAABnTOIl03Y411.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/01/F4/rBACYVkT4XCAC-KWAACBYCT3OKo039.jpg'></image>
+          </view>
+        </view>
+      </view> 
+    </view>
+
+    <!-- 爱母婴有 -->
+    <view class="divide"></view>
+    <view class="mainTopic">
+      <view class='title'>
+        <text>玉质居家</text>
+      </view>
+      <view class="big">
+        <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/02/01/rBACYVkT4c-ATKM2AAEIk2nTkeg265.jpg'></image>
+          </view>
+        </view>
+       <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/00/4A/rBACVFkT4d2AVkAQAAJDhl6p_U8737.jpg'></image>
+          </view>
+        </view>
+      </view>
+
+      <view class="small">
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/32/51/rBACVFrLNDeAZK8LAACeCjabHko161.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/2F/FF/rBACW1ql8JyAGx4fAABnTOIl03Y411.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/01/F4/rBACYVkT4XCAC-KWAACBYCT3OKo039.jpg'></image>
+          </view>
+        </view>
+      </view> 
+    </view>
+
+    <!-- 爱母婴有 -->
+    <view class="divide"></view>
+    <view class="mainTopic">
+      <view class='title'>
+        <text>爱母婴有</text>
+      </view>
+      <view class="big">
+        <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/02/01/rBACYVkT4c-ATKM2AAEIk2nTkeg265.jpg'></image>
+          </view>
+        </view>
+       <view class="bigItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="bigImgView">
+            <image src='https://bfs.biyao.com/group1/M00/00/4A/rBACVFkT4d2AVkAQAAJDhl6p_U8737.jpg'></image>
+          </view>
+        </view>
+      </view>
+
+      <view class="small">
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/32/51/rBACVFrLNDeAZK8LAACeCjabHko161.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/2F/FF/rBACW1ql8JyAGx4fAABnTOIl03Y411.jpg'></image>
+          </view>
+        </view>
+        <view class="smallItem">
+          <view class="headline">无暇美肌</view>
+          <view class="adWord">让你从头美到脚</view>
+          <view class="smallImgView">
+            <image src='https://bfs.biyao.com/group1/M00/01/F4/rBACYVkT4XCAC-KWAACBYCT3OKo039.jpg'></image>
+          </view>
+        </view>
+      </view> 
+    </view>
+
+    <!-- 推荐 -->
+    <view class="divide"></view>
+    <view class="recommendGoods">
+      <view class="title">为你·推荐</view>
+      <view class="goodsItem">
+        <image src='https://bfs.biyao.com/group1/M00/1A/10/rBACW1mRPxiAdWwUAAC_xY0lIFY914.jpg'></image>
+        <view class='detail'>
+          <view class='goodsName'><text>爆品</text>
+          小分子玻尿酸高保湿面膜</view>
+          <text class='goodprice'><text>￥</text>79</text>
+        </view>
+      </view>
+
+      <view class="goodsItem">
+        <image src='https://bfs.biyao.com/group1/M00/02/04/rBACW1kT4d6AacNgAAG7DNxw8B8786.jpg'></image>
+        <view class='detail'>
+          <view class='goodsName'><text>爆品</text>
+          小分子玻尿酸高保湿面膜</view>
+          <text class='goodprice'><text>￥</text>79</text>
+        </view>
+      </view>
+
+      <view class="goodsItem">
+        <image src='https://bfs.biyao.com/group1/M00/41/A1/rBACVFtIbNiAP2WnAAJIYCM0UfM919.jpg'></image>
+        <view class='detail'>
+          <view class='goodsName'><text>爆品</text>
+          小分子玻尿酸高保湿面膜</view>
+          <text class='goodprice'><text>￥</text>79</text>
+        </view>
+      </view>
+
+      <view class="goodsItem">
+        <image src='https://bfs.biyao.com/group1/M00/55/03/rBACYVuN0EmAbvOKAAELOeJqVek327.jpg'></image>
+        <view class='detail'>
+          <view class='goodsName'><text>爆品</text>
+          小分子玻尿酸高保湿面膜</view>
+          <text class='goodprice'><text>￥</text>79</text>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+
+</view>

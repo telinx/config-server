@@ -1,0 +1,75 @@
+<view class="container">
+  <view class="daysNew">
+    <view class="dateHead">
+      ——<view class="dateTitle">2018-09-10</view>——
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/55/03/rBACYVuN0EmAbvOKAAELOeJqVek327.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/56/43/rBACW1uSTwyAQTQsAACCIMaHAu4223.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/51/C6/rBACYVuGAyOAY75MAAIBa35mfZQ464.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/56/CA/rBACYVuV0LqAMMmIAACx2hRQx6c587.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+
+    <view class="dateHead">
+      ——<view class="dateTitle">2018-09-10</view>——
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/55/03/rBACYVuN0EmAbvOKAAELOeJqVek327.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/55/03/rBACYVuN0EmAbvOKAAELOeJqVek327.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/55/03/rBACYVuN0EmAbvOKAAELOeJqVek327.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+    <view class="goodsItem">
+      <image src='https://bfs.biyao.com/group1/M00/55/03/rBACYVuN0EmAbvOKAAELOeJqVek327.jpg'></image>
+      <view class='detail'>
+        <view class='goodsName'>小分子玻尿酸高保湿面膜</view>
+        <view class='goodsDesc'>小分子玻尿酸高保湿面膜</view>
+        <text class='goodprice'><text>￥</text>79</text>
+      </view>
+    </view>
+  </view>
+</view>

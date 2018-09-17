@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="topic">
+    <image class="mainImg" src='https://bfs.biyao.com/group1/M00/4E/55/rBACW1t2mkeAV4f-AAFjDUNujAY364.jpg' mode='widthFix'></image>
+    <view class='desc'>夏天交替秋天，晚上冻醒了摸被子，白天热化了，夏天是九个太阳秋天就是18个太阳</view>
+    <view class="selectedTitle">为您·精选</view>
+    <view class="goodsList">
+      <view class='item'>
+        <image src='https://bfs.biyao.com/group1/M00/38/9A/rBACW1r4_SmARIIyAACDny0AicU470.jpg'></image>
+        <view class="itemName">冰丝凉席三件套</view>
+        <view class="itemPrice"><text>￥</text>259</view>
+      </view>
+
+      <view class='item'>
+        <image src='https://bfs.biyao.com/group1/M00/38/57/rBACVFsE0XmAWrWVAACEqjoYx3g607.jpg'></image>
+        <view class="itemName">冰丝凉席三件套</view>
+        <view class="itemPrice"><text>￥</text>259</view>
+      </view>
+
+            <view class='item'>
+        <image src='https://bfs.biyao.com/group1/M00/37/EA/rBACYVryhmWAPJtNAAAu9cy_Hd8622.jpg'></image>
+        <view class="itemName">冰丝凉席三件套</view>
+        <view class="itemPrice"><text>￥</text>259</view>
+      </view>
+
+      <view class='item'>
+        <image src='https://bfs.biyao.com/group1/M00/38/D1/rBACVFsGhBaAaBsvAABkl9x8-NY592.jpg'></image>
+        <view class="itemName">冰丝凉席三件套</view>
+        <view class="itemPrice"><text>￥</text>259</view>
+      </view>
+
+            <view class='item'>
+        <image src='https://bfs.biyao.com/group1/M00/38/9A/rBACW1r4_SmARIIyAACDny0AicU470.jpg'></image>
+        <view class="itemName">冰丝凉席三件套</view>
+        <view class="itemPrice"><text>￥</text>259</view>
+      </view>
+
+      <view class='item'>
+        <image src='https://bfs.biyao.com/group1/M00/38/9A/rBACW1r4_SmARIIyAACDny0AicU470.jpg'></image>
+        <view class="itemName">冰丝凉席三件套</view>
+        <view class="itemPrice"><text>￥</text>259</view>
+      </view>
+    </view>
+  </view>
+</view>
